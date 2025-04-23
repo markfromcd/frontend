@@ -14,11 +14,11 @@
     <tbody>
         <tr *ngFor = "let product of products">
             <td> {{product.name}} </td>
-            <td> {{product.price}} </td>
+            <td> ${{product.price}} </td>
             <td> {{product.stock}} </td>
             <td> {{product.category}} </td>
             <td> {{product.description}} </td>
-            <td> {{product.discountedPrice}} </td>
+            <td> ${{product.discountedPrice}} </td>
             <td>
                 <button (click) = "updateProduct(product.id!)" class="btn btn-info"> Update </button>
                 <button (click) = "deleteProduct(product.id!)" class="btn btn-danger" style = "margin-left: 10px;"> Delete </button>
